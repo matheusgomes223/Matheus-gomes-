@@ -7,8 +7,7 @@ const firebaseConfig = {
     projectId: "epi-serra-sull",
     storageBucket: "epi-serra-sull.firebasestorage.app",
     messagingSenderId: "49100006374",
-    appId: "1:49100006374:web:24436329e209345499ac27",
-    measurementId: "G-TV91YBKHT0"
+    appId: "1:49100006374:web:24436329e209345499ac27"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -21,6 +20,7 @@ async function check() {
         console.log("ID:", d.id);
         console.log("DATA:", d.data());
     });
+    process.exit(0);
 }
 
 check().catch(console.error);
